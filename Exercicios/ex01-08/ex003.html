@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+</head>
+<body>
+    <h1>Trabalhando com dados 2.0</h1>
+    <input type="button" value="Clique para começar" onclick="clicou()" >
+    <p>Aqui vai aparecer o resultado...</p>
+
+    <script> 
+        function clicou(){
+           var n = prompt('Qual o seu nome?')
+            var a = document.getElementsByTagName('p')[0]
+            a.innerHTML = `Olá, <strong>${n} </strong>é um prazer te conhecer!`
+        }
+    
+    </script>
+</body>
+</html>

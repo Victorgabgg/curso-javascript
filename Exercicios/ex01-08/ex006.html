@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media JS</title>
+    <style>
+        body{
+            font-size: 15pt;
+        }
+
+        #block{
+         padding: 25px 25px;
+         font-size: 14px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1>Média de aluno 1.0</h1>
+    <input type="button" value="Clique para calcular" id="block">
+    <p>
+        Aqui vai o resultado...
+
+    </p>
+
+    <script>
+        a = document.getElementById('block')
+        b = document.getElementsByTagName('p')[0]
+
+        a.addEventListener('click', clicou)
+
+        function clicou(){
+            nome = prompt('Digite o nome do aluno ')
+            nota1 = Number(prompt('Digite a primeira nota '))
+            nota2 = Number(prompt('Digite a segunda nota '))
+
+            media = (nota1 + nota2) / 2
+            b.innerHTML = `Calculando a média do aluno...<br>
+            As notas obtidas foram para <strong>${nome}</strong> foram <mark>${nota1} e ${nota2}</mark>.<br> 
+            <br><br> A média final será <mark>${media}</mark>.`
+        }
+
+    </script>
+</body>
+</html>

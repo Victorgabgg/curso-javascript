@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+    <style>
+        h1{ 
+            font: normal 25pt Verdana;
+        }
+
+        .block{
+            padding: 25px 25px;
+            font-size: 14px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+
+    <input type="button" value="Clique em mim" class="block">
+    <input type="button" value="Zerar o contador" class="block">
+    <p id="contador">O contador está com <mark>0</mark> cliques.</p>
+
+    <script>
+    a = document.getElementsByClassName('block')[0]
+    b = document.getElementById('contador')
+    c = document.getElementsByClassName('block')[1]
+    var cliques = 0
+    
+    a.addEventListener('click', clicou)
+    c.addEventListener('click', zerar)
+
+    function clicou(){
+        cliques+= 1
+        b.innerHTML = `O contador está com <mark>${cliques}</mark> cliques.`
+    }
+
+    function zerar(){ 
+        b.innerHTML = `O contador está com <mark>0</mark> cliques.`
+        cliques = 0
+    }
+
+    </script>  
+</body>
+</html>

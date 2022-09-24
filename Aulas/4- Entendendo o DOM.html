@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Aqui está a primeira linha</p>
+    <p> Uma segunda linha para teste</p>
+    <div id="msg">Clique em mim!</div>
+    <script>
+    /*Operador ternário: 
+    É o único que possui 3 operandos. É frequentemente usado como atalho para o if.
+        condition ? expr1 : expr2 
+        media >= 7 ? "aprovado" : "reprovado"
+
+        var x = 8
+        var res = x % 2 == 0 ? 5:9
+
+        Entendendo o DOM
+    Ele é um facilitador que tem no navegador para dar acesso aos elementos javascript. Sem ele teríamos
+    muitas dificuldades em acessar os elementos das nossas páginas. 
+
+       - Document Object Model
+       - Arvore DOM
+        window - É a janela do navegador
+tem três objetos:  location (url)//document(documento atual) //history(pra onde você vai)
+
+window-> document -> html -> head/body -> (head) meta, title // (body) h1, p, p , div
+ 
+        */
+       window.document.write('<h3>Olá mundo</h3><br/>')
+       window.document.write(window.document.charset)
+       document.write('<br/>')
+       var n = window.document.getElementsByTagName('p')[0]
+       window.document.write('Está escrito: ' + n.innerText)
+
+
+       var d = window.document.getElementById('msg')
+       d.style.background = 'green'
+    /*window.document.getelementbyId('msg').innerText = 'Olá'
+    //--> Também é possível alterar o comando dessa forma, sem criar variável. 
+
+
+    Métodos para selecionar elementos DOM: Marca, ID, Nome, Classe e Seletor. 
+    Marca -> getElementByTagName()
+
+    É recomendado usar por seletor (Query Selector)  */
+
+    var d = window.document.querySelector('div#msg') //Quando é class é representada por . já id #
+    d.style.color = 'blue'
+    </script>
+</body>
+</html>

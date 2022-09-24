@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(201, 201, 245);
+            color: rgb(145, 57, 57);
+            font: normal 25pt Arial;
+        }
+        h1{ 
+           
+            color: rgb(100, 41, 22)
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    
+    <script>
+        //Usando somente o n1+n2 o resultado vai concatenar ao invés de somar.
+        //Conversões Number.parseInt(n) e Number.parseFloat(n)
+        //Nas novas versões podemos utilizar apenas Number ao invés do comando inteiro. Tratado como float.
+        //Para converter para string usamos String(n) ou n2 = String(prompt(''))
+        //A variável pode ser declarada sem var ou $
+        //Template string, ao invés de usar o +, é possível só usar com crase: `Estou aprendendo ${s}`
+        //n.length -> Quantos caracteres tem.
+        //n.toUpperCase() -> Transforma em maiúsculo.
+        //n.toLowerCase() -> Transforma em minúsculo.
+        //document.write(`<h2>Seu nome tem ${nome.length} letras.</h2><br/>`)
+        //n1.toFixed(2).replace('.', ',') -> Duas casas decimais e troca ponto por virgula.
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        //5**2 = 25
+        
+        var n1 = Number(prompt('Digite um numero: ')) //String
+        var n2 = Number(prompt('Digite outro numero: ')) //String
+        var n = n1 + n2
+        alert('O resultado é: ' + n)
+        alert(`A soma entre os dois valores é: ${n}`) //Usando template string.
+    </script>
+</body>
+</html>
