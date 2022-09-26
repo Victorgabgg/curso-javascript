@@ -5,45 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interagindo com o sistema</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-        #botao{
-            padding: 25px 25px;
-            font-size: 16px;
-        }
-
-        h1{
-            font-family: 'Pacifico', cursive; font-weight: normal;
-        }
-
-        body{
-            font: normal 20px ARIAL;
-        }
-
-    </style>
+    <link rel="stylesheet" href="ex0013.css">
 </head>
 <body>
     <h1>Interagindo com o sistema</h1>
     <input type="button" id="botao" value="Clique em mim">
 
     <p>O resultado vai aqui...</p>
-    <script>
-    var botao = document.getElementById('botao')
-    botao.addEventListener('click', hora)
-
-
-    var res = document.getElementsByTagName('p')[0]
-
-    function hora(){
-        var agora = new Date()
-        //var dia = agora.getDate (Caso quisesse pegar um dia específico.)
-
-        res.innerHTML = `<p>O que eu recebi do sistema foi <mark>${agora}.</mark>`
-
-    }
-
-
-
-    </script>
+    <script src="ex0013.js"></script>
 </body>
 </html>
