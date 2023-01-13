@@ -10,4 +10,5 @@ var botao = document.getElementById('botao')
 
         res.innerHTML = `<p>O que eu recebi do sistema foi <mark>${agora}.</mark>`
 
+
     }

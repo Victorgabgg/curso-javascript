@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>Checando programas</h2>
+
+    <p>Mostra em boolean se 10 > 9.</p>
+    <p id="demo"></p>
+
+    <script>
+        var a = 0
+        var x = 5;
+        a = document.getElementById('demo')
+        a.innerHTML = Boolean(10 > 9);
+        a.innerHTML += `<p>X recebeu 5, X===5?:`
+        a.innerHTML += `<p>${x===5}</p>`
+    </script>
+</body>
+</html>
